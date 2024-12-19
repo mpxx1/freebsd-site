@@ -1,0 +1,14 @@
+* {
+  font-family: "JetBrains Mono", Consolas, monospace;
+}
+
+.main__start-section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main-start.css.map */
