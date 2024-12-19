@@ -5,165 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/outline.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-<header>
-    <div>
-        <a>
+<header class="header">
+    <div class="header__container">
+        <a class="header__logo" href="#">
             <img src="./assets/logo.png" alt="FreeBSB logo">
         </a>
-        <nav>
-            <ul>
-                <li>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
                     <a href="#">Home</a>
                 </li>
-                <li>
+                <li class="header__nav-item">
                     <a href="#">About</a>
                 </li>
-                <li>
+                <li class="header__nav-item">
                     <a href="#">Download</a>
                 </li>
-                <li>
+                <li class="header__nav-item">
                     <a href="#">Documentation</a>
                 </li>
-                <li>
+                <li class="header__nav-item">
                     <a href="#">Community</a>
                 </li>
-                <li>
+                <li class="header__nav-item">
                     <a href="#">Foundation</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
-<main>
-    <section>
-        <h1>FreeBSD</h1>
-        <div>
-            <p>
-                Berkeley Software Distribution
-                The Power To Serve
-            </p>
-        </div>
+<main class="main">
+    <section class="main__start-section">
+        <h1 class="main__start-section__title">FreeBSD</h1>
+        <p class="main__start-section__description">
+            Berkeley Software Distribution
+            The Power To Serve
+        </p>
     </section>
-    <section>
-        <div>
+    <section class="main__about-section">
+        <div class="main__about-section__container">
             <img src="./assets/1.png" alt="1">
-            <p>FreeBSD is an operating system for <a href="https://www.freebsd.org/platforms/">a variety of platforms</a> which focuses on features, speed, and stability.</p>
+            <p>FreeBSD is an operating system for <a class="text-link" href="https://www.freebsd.org/platforms/">a variety of platforms</a> which focuses on features, speed, and stability.</p>
         </div>
     </section>
-    <section>
-        <p>FreeBSD is an operating system used to power modern servers, desktops, and embedded <a href="https://www.freebsd.org/platforms/">platforms</a>. Its advanced networking, security, and storage features have made FreeBSD the platform of choice for many of the <a href="https://docs.freebsd.org/en/books/handbook/introduction/#introduction-nutshell-users">busiest web sites</a> and most pervasive embedded networking and storage devices.</p>
+    <section class="main__using-section">
+        <p>FreeBSD is an operating system used to power modern servers, desktops, and embedded <a class="text-link" href="https://www.freebsd.org/platforms/">platforms</a>. Its advanced networking, security, and storage features have made FreeBSD the platform of choice for many of the <a class="text-link" href="https://docs.freebsd.org/en/books/handbook/introduction/#introduction-nutshell-users">busiest web sites</a> and most pervasive embedded networking and storage devices.</p>
     </section>
-    <section>
-        <div>
+    <section class="main__news-events-section">
+        <div class="main__news-events-section__news-container">
             <h3>Latest News</h3>
-            <ul>
-                <li>
+            <ul class="main__news-events-section__news-list">
+                <li class="main__news-events-section__news-item">
                     <p>2024-11-23</p>
-                    <a href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">FreeBSD 14.2-RC1 Available</a>
+                    <a class="text-link" href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">FreeBSD 14.2-RC1 Available</a>
                 </li>
                 <li>
                     <p>2024-11-17</p>
-                    <a href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">FreeBSD 14.2-BETA3 Available</a>
+                    <a class="text-link" href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">FreeBSD 14.2-BETA3 Available</a>
                 </li>
                 <li>
                     <p>2024-11-07</p>
-                    <a href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">July-September 2024 Status Report</a>
+                    <a class="text-link" href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">July-September 2024 Status Report</a>
                 </li>
             </ul>
-            <a href="https://www.freebsd.org/news/newsflash/">More</a>
+            <a class="main__news-events-section__more-link text-link" href="https://www.freebsd.org/news/newsflash/">More</a>
         </div>
-        <div>
+        <div class="main__news-events-section__events-container">
             <h3>Upcoming Events</h3>
-            <ul>
-                <li>
+            <ul class="main__news-events-section__events-list">
+                <li class="main__news-events-section__events-item">
                     <p>2025-02-01 - 2025-02-02</p>
-                    <a href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">FOSDEM 2025 Brussels, Belgium</a>
+                    <a class="text-link" href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">FOSDEM 2025 Brussels, Belgium</a>
                 </li>
-                <li>
+                <li class="main__news-events-section__events-item">
                     <p>2025-03-20 - 2025-03-23</p>
-                    <a href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">AsiaBSDCon 2025 Tokyo, Japan</a>
+                    <a class="text-link" href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">AsiaBSDCon 2025 Tokyo, Japan</a>
                 </li>
-                <li>
+                <li class="main__news-events-section__events-item">
                     <p>2025-06-11 - 2025-06-14</p>
-                    <a href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">BSDCan 2025 Ottawa, Canada</a>
+                    <a class="text-link" href="https://www.freebsd.org/news/newsflash/#2024-11-23:1">BSDCan 2025 Ottawa, Canada</a>
                 </li>
             </ul>
-            <a href="https://www.freebsd.org/events/">More</a>
+            <a class="main__news-events-section__more-link text-link" href="https://www.freebsd.org/events/">More</a>
         </div>
-        <div>
+        <div class="main__news-events-section__decoration-container">
             <img src="./assets/2.png" alt="2">
         </div>
     </section>
-    <section>
-        <div>
+    <section class="main__press-security-section">
+        <div class="main__news-events-section__decoration-container">
             <img src="./assets/3.jpg" alt="3">
         </div>
-        <div>
+        <div class="main__press-security-section__press-container">
             <h3>Press</h3>
-            <ul>
-                <li>
+            <ul class="main__press-security-section__press-list">
+                <li class="main__press-security-section__press-item">
                     <p>2024-08</p>
-                    <a href="https://www.freebsd.org/press/#2024-08:1">Sovereign Tech Fund to Invest €686,400 in FreeBSD Infrastructure Modernization</a>
+                    <a class="text-link" href="https://www.freebsd.org/press/#2024-08:1">Sovereign Tech Fund to Invest €686,400 in FreeBSD Infrastructure Modernization</a>
                 </li>
-                <li>
+                <li class="main__press-security-section__press-item">
                     <p>2023-06</p>
-                    <a href="https://www.freebsd.org/press/#2023-06:1">Happy 30th, FreeBSD!</a>
+                    <a class="text-link" href="https://www.freebsd.org/press/#2023-06:1">Happy 30th, FreeBSD!</a>
                 </li>
             </ul>
-            <a href="https://www.freebsd.org/press/">More</a>
+            <a class="main__press-security-section__more-link text-link" href="https://www.freebsd.org/press/">More</a>
         </div>
-        <div>
+        <div class="main__press-security-section__security-container">
             <h3>Security</h3>
-            <ul>
-                <li>
+            <ul class="main__press-security-section__security-list">
+                <li class="main__press-security-section__security-item">
                     <p>2024-10-29</p>
-                    <a href="https://www.freebsd.org/security/advisories/FreeBSD-SA-24:19.fetch.asc">FreeBSD-SA-24:19.fetch</a>
+                    <a class="text-link" href="https://www.freebsd.org/security/advisories/FreeBSD-SA-24:19.fetch.asc">FreeBSD-SA-24:19.fetch</a>
                 </li>
-                <li>
+                <li class="main__press-security-section__security-item">
                     <p>2024-10-29</p>
-                    <a href="https://www.freebsd.org/security/advisories/FreeBSD-SA-24:17.bhyve.asc">FreeBSD-SA-24:17.bhyve</a>
+                    <a class="text-link" href="https://www.freebsd.org/security/advisories/FreeBSD-SA-24:17.bhyve.asc">FreeBSD-SA-24:17.bhyve</a>
                 </li>
-                <li>
+                <li class="main__press-security-section__security-item">
                     <p>2024-09-19</p>
-                    <a href="https://www.freebsd.org/security/advisories/FreeBSD-SA-24:16.libnv.asc">FreeBSD-SA-24:16.libnv</a>
+                    <a class="text-link" href="https://www.freebsd.org/security/advisories/FreeBSD-SA-24:16.libnv.asc">FreeBSD-SA-24:16.libnv</a>
                 </li>
             </ul>
-            <a href="https://www.freebsd.org/security/advisories/">More</a>
+            <a class="main__press-security-section__more-link text-link" href="https://www.freebsd.org/security/advisories/">More</a>
         </div>
     </section>
 </main>
-<footer>
-    <nav>
-        <p> © 1995-2024 The FreeBSD Project All rights reserved. The mark FreeBSD is a registered trademark of The FreeBSD Foundation and is used by The FreeBSD Project with the permission of The FreeBSD Foundation.</p>
-    </nav>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Foundation</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-            <li>
-                <a href="#">Legal Notices</a>
-            </li>
-            <li>
-                <a href="#">Developers</a>
-            </li>
-            <li>
-                <a href="#">Wiki</a>
-            </li>
-            <li>
-                <a href="#">Support</a>
-            </li>
-            <li>
-                <a href="#">License</a>
-            </li>
-        </ul>
-    </nav>
+<footer class="footer">
+    <div class="footer__container">
+        <p>© 1995-2024 The FreeBSD Project All rights reserved. The mark FreeBSD is a registered trademark of The FreeBSD Foundation and is used by The FreeBSD Project with the permission of The FreeBSD Foundation.</p>
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                    <a class="text-link" href="#">Foundation</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="text-link" href="#">Contact</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="text-link" href="#">Legal Notices</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="text-link" href="#">Developers</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="text-link" href="#">Wiki</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="text-link" href="#">Support</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="text-link" href="#">License</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </footer>
 </body>
 </html>

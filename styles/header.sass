@@ -1,0 +1,45 @@
+@import "common"
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  width: 100vw
+  background: $color-header-background
+  backdrop-filter: blur(20px)
+
+  &__container
+    display: flex
+    padding: 10px
+    width: 100%
+    align-items: center
+    justify-content: center
+
+  &__logo
+    img
+      height: 51px
+      width: 51px
+
+  &__nav
+    margin: 0 auto
+    padding: 0 51px 0 0
+
+    &-list
+      padding: 0
+      margin: 0
+      display: flex
+      list-style: none
+
+    &-item
+      padding: 10px 20px
+
+      a
+        font-size: 24px
+        font-weight: 700
+        line-height: 32px
+        text-decoration: none
+        color: $color-text-default
+
+        &:hover
+          text-decoration: underline
