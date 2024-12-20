@@ -585,6 +585,10 @@
   border-radius: 10px;
 }
 .main__community-container__list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
   margin: 20px 0;
   width: 100%;
   background: rgba(240, 240, 240, 0.8);
@@ -639,6 +643,9 @@
   border-radius: 10px;
   color: #000000;
   cursor: pointer;
+}
+.main__community-container__list > span {
+  text-align: center;
 }
 
 * {

@@ -12,14 +12,22 @@ function registerEvents() {
         addMessage()
         render()
     })
+    render()
 }
 
 function render() {
     const messagesListElement = document.getElementById("messages-list");
     messagesListElement.innerHTML = "";
 
-    for (const message of messages) {
-        message.render();
+    console.log(messages.length)
+    if (messages.length === 0) {
+        const emptyMarkElement = document.createElement("span")
+        emptyMarkElement.textContent = "No messages";
+        messagesListElement.appendChild(emptyMarkElement);
+    } else {
+        for (const message of messages) {
+            message.render();
+        }
     }
 }
 
