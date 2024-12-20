@@ -648,6 +648,31 @@
   text-align: center;
 }
 
+.main__user {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 30px;
+}
+.main__user img {
+  border-radius: 50%;
+}
+.main__user__info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+}
+.main__user__info span {
+  margin: auto 0;
+}
+.main__user-error {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   font-family: "JetBrains Mono", Consolas, monospace;
 }
