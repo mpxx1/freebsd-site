@@ -1,0 +1,98 @@
+@import "common"
+
+.main
+  &__community-container
+    margin: 0 auto
+    padding: 100px 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    max-width: 800px
+    min-height: 100vh
+    width: 100%
+    box-sizing: border-box
+
+    &__form
+      padding: 20px
+      background: rgba(240, 240, 240, 0.8)
+      border-radius: 30px
+
+      input
+        background: #ffffff
+        border: none
+        padding: 10px 20px
+        border-radius: 10px
+
+      button
+        padding: 10px 20px
+        background: rgba(0, 0, 0, 1)
+        color: $color-text-invert
+        border: none
+        border-radius: 10px
+
+    &__list
+      display: flex
+      flex-direction: column
+      align-items: stretch
+      justify-content: center
+      margin: 20px 0
+      width: 100%
+      background: rgba(240, 240, 240, 0.8)
+      border-radius: 30px
+      padding: 40px
+      list-style: none
+
+      &-message
+        margin: 0 0 10px 0
+        padding: 10px 20px
+        display: grid
+        grid-template-columns: auto 1fr auto auto
+        grid-template-areas: "username content like remove"
+        background: rgba(255, 255, 255, 1)
+        border-radius: 10px
+
+        &:last-child
+          margin-bottom: 0
+
+        &__content
+          grid-area: content
+          margin: auto 0
+
+        &__username
+          grid-area: username
+          margin: auto 10px auto 0
+          color: $color-text-primary
+
+          &::after
+            content: ":"
+
+        &__like
+          margin: auto 20px
+          font-size: 24px
+          color: rgba(230, 230, 230, 0.8)
+          cursor: pointer
+          transition: 0.2s ease-in-out
+
+          &:hover
+            transform: scale(1.1)
+
+          &:active
+            transform: scale(0.9)
+
+          &.liked
+            color: $color-text-primary
+
+        &__remove-button
+          padding: 10px 20px
+          border: none
+          background: rgba(230, 230, 230, 0.8)
+          border-radius: 10px
+          color: $color-text-default
+          cursor: pointer
+
+      > span
+        text-align: center
+
+
+
