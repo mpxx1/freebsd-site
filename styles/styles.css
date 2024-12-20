@@ -97,6 +97,7 @@
 
 .main__start-section {
   position: relative;
+
   display: flex;
   height: 100vh;
   width: 100%;
@@ -223,7 +224,7 @@
 }
 
 .text-link {
-  color: #BE55BE;
+=  color: #BE55BE;
   text-decoration: underline;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
@@ -582,6 +583,7 @@
 }
 .footer__nav-item a {
   font-size: 18px;
+
   line-height: 32px;
 }
 
@@ -640,5 +642,4 @@ body, html {
     font-size: 14px;
   }
 }
-
 /*# sourceMappingURL=styles.css.map */
