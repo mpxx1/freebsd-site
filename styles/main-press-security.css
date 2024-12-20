@@ -26,11 +26,11 @@
   font-weight: 700;
 }
 .main__press-security-section__press-container {
-  background-image: url("../assets/background-2.png");
+  background-image: url("/assets/background-2.png");
   background-position-x: 20%;
 }
 .main__press-security-section__securiy-container {
-  background-image: url("../assets/background-3.png");
+  background-image: url("/assets/background-3.png");
   background-position-x: 60%;
 }
 .main__press-security-section__decoration-container {

@@ -4,8 +4,55 @@
 @import "main-using"
 @import "main-news-events"
 @import "main-press-security"
+@import "main-downloads"
 @import "footer"
 
 body, html
   margin: 0
   padding: 0
+
+.code-snippet
+  padding: 15px 30px
+  border-radius: 20px
+  background: rgba(0, 0, 0, 0.8)
+  color: $color-text-invert
+  font-size: 20px
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5)
+  backdrop-filter: blur(20px)
+  box-sizing: border-box
+
+  &__content
+    margin: 5px 0 5px 24px
+
+    &.success
+      color: #0fd70a
+
+  &::before
+    content: "$"
+    color: $color-text-primary
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1)
+
+  &.light
+    background: rgba(240, 240, 240, 0.5)
+    box-shadow: 10px 10px 30px rgba(240, 240, 240, 0.5)
+    color: $color-text-default
+
+    &::before
+      content: "$"
+      color: $color-text-primary
+      text-shadow: 0 0 10px rgba(255, 255, 255, 1)
+
+.noselect
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+@media all and (max-width: 1100px)
+  .code-snippet
+    font-size: 16px
+
+@media all and (max-width: 500px)
+  .code-snippet
+    font-size: 14px
