@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/loadingTime.js"></script>
 </head>
 <body>
 <header class="header">
@@ -18,23 +20,23 @@
         </a>
         <nav class="header__nav noselect">
             <ul class="header__nav-list">
-                <li class="header__nav-item">
+                <li class="header__nav-item" id="navlink-home">
                     <a href="./index.html">Home</a>
                 </li>
-                <li class="header__nav-item">
-                    <a href="#">About</a>
+                <li class="header__nav-item" id="navlink-about">
+                    <a href="./pages/about.html">About</a>
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item" id="navlink-downloads">
                     <a href="./pages/downloads.html">Download</a>
                 </li>
-                <li class="header__nav-item">
-                    <a href="#">Documentation</a>
+                <li class="header__nav-item" id="navlink-documentation">
+                    <a href="./pages/documentation.html">Documentation</a>
                 </li>
-                <li class="header__nav-item">
-                    <a href="#">Community</a>
+                <li class="header__nav-item" id="navlink-community">
+                    <a href="./pages/community.html">Community</a>
                 </li>
-                <li class="header__nav-item">
-                    <a href="#">Foundation</a>
+                <li class="header__nav-item" id="navlink-foundation">
+                    <a href="./pages/foundation.html">Foundation</a>
                 </li>
             </ul>
             <button class="header__nav-menu">●●●</button>
@@ -187,5 +189,6 @@
         </nav>
     </div>
 </footer>
+<span id="loading-time"></span>
 </body>
 </html>

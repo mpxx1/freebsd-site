@@ -54,6 +54,7 @@
     &-item
       padding: 10px 20px
       cursor: pointer
+      transition: 0.2s ease-in-out
 
       a
         font-size: 18px
@@ -62,8 +63,18 @@
         text-decoration: none
         color: $color-text-default
 
-      &:hover a
-        text-decoration: underline
+      &:active
+        transform: scale(0.9)
+
+      &:hover
+        transform: scale(1.1)
+
+        a
+          text-decoration: underline
+
+      &.active
+        a
+          color: $color-text-primary
 
 @media all and (max-width: 900px)
   .header__nav
