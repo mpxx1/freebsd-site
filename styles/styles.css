@@ -61,6 +61,7 @@
 .header__nav-item {
   padding: 10px 20px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 .header__nav-item a {
   font-size: 18px;
@@ -69,8 +70,17 @@
   text-decoration: none;
   color: #000000;
 }
+.header__nav-item:active {
+  transform: scale(0.9);
+}
+.header__nav-item:hover {
+  transform: scale(1.1);
+}
 .header__nav-item:hover a {
   text-decoration: underline;
+}
+.header__nav-item.active a {
+  color: #BE55BE;
 }
 
 @media all and (max-width: 900px) {
@@ -639,6 +649,11 @@ body, html {
   .code-snippet {
     font-size: 14px;
   }
+}
+#loading-time {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
