@@ -17,6 +17,8 @@ function setNavigation() {
         setButtonActive("community")
     } else if (currentNavigation.includes("foundation")) {
         setButtonActive("foundation")
+    } else if (currentNavigation.includes("user")) {
+        setButtonActive("user")
     }
 }
 
