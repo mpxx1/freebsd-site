@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
     <script src="../scripts/navigation.js"></script>
     <script src="../scripts/loadingTime.js"></script>
+    <script src="../scripts/messenger.js"></script>
 </head>
 <body>
 <header class="header">
@@ -42,9 +43,16 @@
     </div>
 </header>
 <main class="main">
-    <section class="main__downloads__release-section">
+    <section class="main__community-container">
         <img src="../assets/logo-gradient.svg" alt="logo">
         <h2>Community</h2>
+        <form class="main__community-container__form" id="messages-form">
+            <input id="messages-form-content" class="main__community-container__form__input-message" type="text" placeholder="Message">
+            <input id="messages-form-username" class="main__community-container__form__input-username" type="text" placeholder="Username">
+            <button class="main__community-container__form__input-submit" type="submit">Send</button>
+        </form>
+        <ul class="main__community-container__list" id="messages-list">
+        </ul>
     </section>
 </main>
 <footer class="footer">

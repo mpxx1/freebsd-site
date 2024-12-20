@@ -554,6 +554,103 @@
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
+.main__community-container {
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main__community-container__form {
+  padding: 20px;
+  background: rgba(240, 240, 240, 0.8);
+  border-radius: 30px;
+}
+.main__community-container__form input {
+  background: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.main__community-container__form button {
+  padding: 10px 20px;
+  background: rgb(0, 0, 0);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+}
+.main__community-container__list {
+  margin: 20px 0;
+  width: 100%;
+  background: rgba(240, 240, 240, 0.8);
+  border-radius: 30px;
+  padding: 40px;
+  list-style: none;
+}
+.main__community-container__list-message {
+  margin: 0 0 10px 0;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-areas: "username content like remove";
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.main__community-container__list-message:last-child {
+  margin-bottom: 0;
+}
+.main__community-container__list-message__content {
+  grid-area: content;
+  margin: auto 0;
+}
+.main__community-container__list-message__username {
+  grid-area: username;
+  margin: auto 10px auto 0;
+  color: #BE55BE;
+}
+.main__community-container__list-message__username::after {
+  content: ":";
+}
+.main__community-container__list-message__like {
+  margin: auto 20px;
+  font-size: 24px;
+  color: rgba(230, 230, 230, 0.8);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.main__community-container__list-message__like:hover {
+  transform: scale(1.1);
+}
+.main__community-container__list-message__like:active {
+  transform: scale(0.9);
+}
+.main__community-container__list-message__like.liked {
+  color: #BE55BE;
+}
+.main__community-container__list-message__remove-button {
+  padding: 10px 20px;
+  border: none;
+  background: rgba(230, 230, 230, 0.8);
+  border-radius: 10px;
+  color: #000000;
+  cursor: pointer;
+}
+
+* {
+  font-family: "JetBrains Mono", Consolas, monospace;
+}
+
+.text-link {
+  color: #BE55BE;
+  text-decoration: underline;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
 .footer {
   padding: 40px;
   display: flex;
