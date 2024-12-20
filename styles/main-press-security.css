@@ -1,0 +1,49 @@
+* {
+  font-family: "JetBrains Mono", Consolas, monospace;
+}
+
+.text-link {
+  color: #B40000;
+  text-decoration: underline;
+}
+
+.main__press-security-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  width: 100%;
+  height: 100vh;
+}
+.main__press-security-section__press-container, .main__press-security-section__security-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__press-security-section__press-container h3, .main__press-security-section__security-container h3 {
+  margin: 100px 0;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+.main__press-security-section__press-container {
+  background-image: url("../assets/background-2.png");
+  background-position-x: 20%;
+}
+.main__press-security-section__securiy-container {
+  background-image: url("../assets/background-3.png");
+  background-position-x: 60%;
+}
+.main__press-security-section__decoration-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.main__press-security-section__decoration-container img {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+/*# sourceMappingURL=main-press-security.css.map */
